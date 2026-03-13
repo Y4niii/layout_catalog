@@ -3,12 +3,12 @@ body {
 }
 
 .container {
-  padding-inline: 40px;
-  padding-block: 50px;
+  padding-inline: $padding-inline;
+  padding-block: $padding-block;
 
   display: grid;
   grid-template-columns: 1fr;
-  gap: 46px 48px;
+  gap: $grid-gap;
 }
 
 @media (min-width: 488px) {
@@ -45,7 +45,7 @@ p {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   background-color: $color-white;
-  transition: all 0.3s ease;
+  transition: $transition;
 
   &__title {
     margin: 40px auto 0;
@@ -129,6 +129,7 @@ p {
     color: $color-white;
     line-height: 16px;
     font-size: 14px;
+    transition: $transition;
 
     &:hover {
       background-color: $color-white;

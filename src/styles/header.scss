@@ -1,5 +1,5 @@
-body {
-  margin: 0;
+a{
+  color: $color-primary;
 }
 
 .header {
@@ -16,7 +16,7 @@ body {
   font-style: normal;
   font-variation-settings: 'wdth' 100;
   text-transform: uppercase;
-  transition: all 0.3s ease;
+  transition: $transition;
 
 
 &__logo {
@@ -41,6 +41,8 @@ body {
   position: relative;
   text-decoration: none;
   line-height: 15px;
+  transition: $transition;
+
 
 &::after{
   opacity: 0;
@@ -61,10 +63,12 @@ body {
     opacity: 1;
   }
 }
+}
 
-  &--active {
+.is-active {
   color: $color-primary;
-  &::after{
+
+  &::after {
     opacity: 1;
   }
 }
@@ -81,10 +85,4 @@ body {
 
 &__item:not(:last-child){
   margin-right: 20px;
-}
-
-}
-
-a[data-qa="nav-hover"]{
-  color: $color-primary;
 }

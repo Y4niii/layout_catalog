@@ -1,10 +1,10 @@
 .stars {
   display: flex;
-  gap: 4px;
+  gap: $stars-gap;
 
   &__star {
-    width: 16px;
-    height: 16px;
+    width: $stars-width;
+    height: $stars-height;
     border-radius: 0.5px;
 
     background-image: url('../images/star.svg');
