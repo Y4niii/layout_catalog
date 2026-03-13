@@ -1,12 +1,9 @@
-body {
-  margin: 0;
-}
-
 .container {
   padding-inline: $padding-inline;
   padding-block: $padding-block;
 
   display: grid;
+  justify-items: center;
   grid-template-columns: 1fr;
   gap: $grid-gap;
 }
@@ -28,16 +25,6 @@ body {
       grid-template-columns: repeat(4, 1fr);
     }
   }
-
-main {
-  font-family: $font-main;
-  line-height: $line-height-main;
-  font-size: $font-size-main;
-}
-
-p {
-  margin: 0;
-}
 
 .card {
   width: $card-width;
