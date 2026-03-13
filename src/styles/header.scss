@@ -52,6 +52,7 @@ body {
   bottom: -29px;
   left: 0;
   position: absolute;
+}
 
   &:hover{
   color: $color-primary;
@@ -82,7 +83,7 @@ body {
   margin-right: 20px;
 }
 
-}
+
 
 a[data-qa="nav-hover"]{
   color: $color-primary;
