@@ -73,10 +73,6 @@ a{
   }
 }
 
-
-}
-
-
 &__list{
   list-style: none;
   display: flex;
@@ -85,4 +81,5 @@ a{
 
 &__item:not(:last-child){
   margin-right: 20px;
+}
 }
